@@ -1,0 +1,14 @@
+name: Setup PHP
+permissions: 
+    contents: write
+on: 
+    workflow_dispatch
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.4'
